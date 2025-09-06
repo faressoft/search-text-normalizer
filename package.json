@@ -1,0 +1,49 @@
+{
+  "name": "search-text-normalizer",
+  "version": "1.0.0",
+  "description": "Text normalization utilities for different languages to improve search accuracy by normalizing text variations",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "text",
+    "normalization",
+    "search",
+    "arabic",
+    "hebrew",
+    "greek",
+    "latin",
+    "syriac",
+    "multilingual",
+    "i18n"
+  ],
+  "author": "Mohammad Fares <faressoft.com@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "index.js",
+      "*.ts",
+      "!*.d.ts"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  }
+}
