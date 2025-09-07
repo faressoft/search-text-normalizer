@@ -1,6 +1,6 @@
 {
   "name": "search-text-normalizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Multilingual text normalization utilities for search accuracy",
   "main": "index.js",
   "types": "index.d.ts",
